@@ -1,0 +1,48 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<html>
+  <h1 id = 'title'>freeCodeCamp Survey Form</h1>
+  <p id = 'description'>Thank you for taking the time to help us improve the platform</p>
+  <form id="survey-form">
+    <label id='name-label' for="name">Name</label><br>
+    <input type="text" id="name" required placeholder="Enter your name"><br>
+    <label id='email-label' for="email">Email</label><br>
+    <input type="email" id="email" required placeholder="Enter your email"><br>
+    <label id='number-label' for="age">Age (optional)</label><br>
+    <input type="number" id="number" min="21" max="120" placeholder="Age"><br>
+    <label id='dropdown-label' for="age">Which option best describes your current role?</label><br>
+      <select id="dropdown" required>
+        <option value="" disabled selected>Select current role</option>
+        <option>Student</option>
+        <option>Full Time Job</option>
+        <option>Full Time Learner</option>
+        <option>Prefer not to say</option>
+        <option>Other</option>
+      </select><br>
+    </label><br>
+    <label id='radiobuttons'>Would you recommend freeCodeCamp to a friend?<br>
+          <input type="radio" id="male" name="gender" value="male">
+          <label>Definitely</label><br>
+          <input type="radio" id="female" name="gender" value="female">
+          <label>Maybe</label><br>
+          <input type="radio" id="other" name="gender" value="other">
+          <label>Not sure</label><br>
+    </label><br>
+    <label id='dropdown-label'>Which would you like to see improved? <span>(Check all that apply)</span><br>
+          <input type="checkbox" value = "option" ><label>Front-end Projects</label><br>
+          <input type="checkbox" value = "option"><label>Back-end Projects</label><br>
+          <input type="checkbox" value = "option"><label>Data Visualization</label><br>
+          <input type="checkbox" value = "option"><label>Challenges</label><br>
+          <input type="checkbox" value = "option"><label>Glitter help rooms</label><br>
+          <input type="checkbox" value = "option"><label>Videos</label><br>
+          <input type="checkbox" value = "option"><label>City Meetups</label><br>
+          <input type="checkbox" value = "option"><label>Wiki</label><br>
+          <input type="checkbox" value = "option"><label>Forum</label><br>
+          <input type="checkbox" value = "option"><label>Additional Courses</label><br>
+    </label><br>
+     <label id="additional-comments">Any comments or suggestions?</label><br>
+  <textarea placeholder="Enter your comments here..." ></textarea>
+  <br>
+  <input type="submit" id="submit">
+  </form>
+</html>
